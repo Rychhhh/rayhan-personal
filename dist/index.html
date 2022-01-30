@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Han | Portfolio</title>
+
+    <!-- Link to dist output -->
+    <link rel="stylesheet" href="./output.css">
+
+    <!-- For font poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Email js -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+
+    <!-- Sweet Alert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+</head>
+<body class="bg-body text-white font-poppins pb-12" style="height: 2000;">
+   
+    <header class="py-8">
+        <div class="container flex justify-between items-center  mx-auto px-8 md:px-14 lg:px-24 w-full">
+            <div class="text-xl">Union Dev</div>
+            <div class="hidden md:flex space-x-10 items-center">
+                <a href="#">Home</a>
+                <a href="#work">My Work</a>
+                <a href="#language">Programming Language</a>
+                <a href="#about">About Me</a>
+                <a href="#contact" class="md:py-3 px-3 bg-sky-600  rounded-xl shadow">Hire Me</a>
+            </div>
+            <div class="md:hidden">
+                <svg width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 17.5H0.25V14.6667H13V17.5ZM25.75 10.4167H0.25V7.58333H25.75V10.4167ZM25.75 3.33333H13V0.5H25.75V3.33333Z" fill="white"/></svg>
+            </div>
+        </div>
+    </header>
+
+    <div class="container mt-16 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+
+        <!-- Component For Title, Button, Image -->
+        <div class="flex flex-wrap md:flex-nowrap">
+
+            <nav class="inline-block fixed left-precentace">
+                <div class="absolute left-50 transform -translate-x-1/2 space-y-6 mt-36 md:right-20">
+
+                    <a href="#" class="nav-dot selected-circle block w-7 h-7 border-nav bg-body rounded-full border-4">
+                        <span class="bg-black py-1 px-2 rounded-md ml-10 opacity-0 w-full">Home</span>
+                    </a>
+                    <a href="#work" class="nav-dot block w-7 h-7 border-nav bg-body rounded-full border-4">
+                        <span class="bg-black py-1 px-4 rounded-md ml-10 opacity-0">Work</span>
+                    </a>
+                    <a href="#about" class="nav-dot block w-7 h-7 border-nav bg-body rounded-full border-4">
+                        <span class="bg-black py-1 px-2 rounded-md ml-10 opacity-0">About</span>
+                    </a>
+                    <a href="#language" class="nav-dot block w-7 h-7 border-nav bg-body rounded-full border-4">
+                        <span class="bg-black py-1 px-2 rounded-md ml-10 opacity-0">Skill</span>
+                    </a>
+                    <a href="#contact" class="nav-dot block w-7 h-7 border-nav bg-body rounded-full border-4">
+                        <span class="bg-black py-1 px-2 rounded-md ml-10 opacity-0">Contact</span>
+                    </a>
+
+                </div>
+            </nav>
+
+            <!-- Component Title and Button -->
+            <div class="flex flex-wrap lg:ml-20 justify-center md:justify-start max-w-xl mt-0 md:my-36">
+
+                <!-- Title -->
+                <h1 class="font-bold text-5xl text-center md:text-6xl md:text-left lg:text-7xl lg:pl-8 ">Welcome <br>  To My Website Portfolio.</h1>
+
+                <!-- Button -->
+                <div class="w-full mt-6 flex justify-center md:justify-start md:ml-16 md:mt-7">
+                    <a href="https://github.com/Ryhann?tab=repository" class="transition ease-in-out px-8 py-4 bg-theme text-white font-bold rounded-xl hover:bg-blue-900 hover:translate-y-1 hover:duration-300 hover:scale-110">
+                        <span>View My Work</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Image -->
+        <img src="/public/img/logo.jpg" alt="Man" class=" absolute w-3/4 mt-64 -z-10 md:absolute md:w-2/5 md:mt-10 md:px-10 md:-z-20 md:right-0">
+
+        </div>
+
+
+    </div>
+
+    <div class="container mt-96 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-56 w-full">
+        <section class="w-full">
+            <h2 id="work" class="secondary-title">My work</h2>
+            <p class="section-paragraph">I’ve had the pleasure of working with multiple Fortune 500 companies, designing and implementing both frontend and backend.</p>
+
+            <div class="grid grid-cols-2 gap-6 mt-6">
+                <div class="max-w-full rounded-xl shadow-xl overflow-hidden text-center bg-white">
+                    <img class="w-full rounded hidden md:block bg-nav h-36 lg:h-80 object-cover" src="https://images.unsplash.com/photo-1576153192396-180ecef2a715?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80" alt="imgAlt">
+                    <div class="px-6 py-6  text-black">
+                        <div class="font-bold text-center text-5xl">Name Title</div>
+                        <p class="text-gray-500 text-base py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dignissimos est repellat nam sed doloremque architecto quisquam, dolor iusto asperiores eaque quidem rem pariatur, aspernatur ullam eveniet illo accusamus odit!</p>
+                      </div>
+                      <div class="px-6 pb-4 grid grid-cols-2 gap-1">
+                          <button class="px-2 py-2 bg-sky-500 font-mono text-xl rounded-xl">Demo</button>
+                          <button class="px-2 py-2 bg-gray-700 font-mono text-xl rounded-xl">Github</button>
+                      </div>
+                </div>
+                <div class="max-w-full rounded-xl shadow-xl overflow-hidden text-center bg-white">
+                    <img class="w-full hidden md:block bg-nav h-36 lg:h-80 object-cover" src="https://images.unsplash.com/photo-1545235617-7a424c1a60cc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=880&q=80" alt="imgAlt">
+                    <div class="px-6 py-4  text-black">
+                        <div class="font-bold text-center text-5xl">Name Title</div>
+                        <p class="text-gray-500 text-base py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dignissimos est repellat nam sed doloremque architecto quisquam, dolor iusto asperiores eaque quidem rem pariatur, aspernatur ullam eveniet illo accusamus odit!</p>
+                      </div>
+                      <div class="px-6 py-4 grid grid-cols-2 gap-1">
+                          <button class="px-2 py-2 bg-sky-500 font-mono text-xl rounded-xl">Demo</button>
+                          <button class="px-2 py-2 bg-gray-700 font-mono text-xl rounded-xl">Github</button>
+                      </div>
+                </div>
+                <div class="max-w-full rounded-xl shadow-xl overflow-hidden text-center bg-white">
+                    <img class="w-full hidden md:block md:h-80" src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1336&q=80" alt="imgAlt">
+                    <div class="px-6 py-4  text-black">
+                      <div class="font-bold text-center text-5xl">Name Title</div>
+                      <p class="text-gray-500 text-base py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dignissimos est repellat nam sed doloremque architecto quisquam, dolor iusto asperiores eaque quidem rem pariatur, aspernatur ullam eveniet illo accusamus odit!</p>
+                    </div>
+                    <div class="px-6 py-4 grid grid-cols-2 gap-1">
+                        <button class="px-2 py-2 bg-sky-500 font-mono text-xl rounded-xl">Demo</button>
+                        <button class="px-2 py-2 bg-gray-700 font-mono text-xl rounded-xl">Github</button>
+                    </div>
+                </div>
+
+                <div class="max-w-full rounded-xl shadow-xl overflow-hidden text-center bg-white">
+                    <img class="w-full h-20 md:h-80" src="https://images.unsplash.com/photo-1603969072881-b0fc7f3d77d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80s" alt="imgAlt">
+                    <div class="px-6 py-4  text-black">
+                      <div class="font-bold text-center text-5xl">Name Title</div>
+                      <p class="text-gray-500 text-base py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dignissimos est repellat nam sed doloremque architecto quisquam, dolor iusto asperiores eaque quidem rem pariatur, aspernatur ullam eveniet illo accusamus odit!</p>
+                    </div>
+                    <div class="px-6 py-4 grid grid-cols-2 gap-1">
+                        <button class="px-2 py-2 bg-sky-500 font-mono text-xl rounded-xl">Demo</button>
+                        <button class="px-2 py-2 bg-gray-700 font-mono text-xl rounded-xl">Github</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <!-- About -->
+    <div id="about">
+        His
+    </div>
+
+    <!-- Programming Language -->
+    <div class="container mt-96 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-56 w-full">
+        <section class="w-full">
+            <h2 id="language" class="secondary-title">Programming Language</h2>
+				<p class="section-paragraph text-gray-300">I’ve had the pleasure of working with multiple Fortune 500 companies, designing and implementing both frontend and backend.</p>
+
+                <div class="space-y-12 my-16">
+					<div class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
+						
+						<!-- Client logo -->
+						<div class="mb-6 lg:mb-0">
+							<img src="https://cdn-icons-png.flaticon.com/512/1051/1051277.png" alt="">
+						</div>
+
+						<!-- Client info -->
+						<div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
+							<h3 class="text-white text-3xl font-semibold">HTML</h3>
+
+							<div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
+								<div class="badge">Markup Language</div>
+								<div class="badge">Frontend development</div>
+							</div>
+
+							<p class="text-secondary">First my website create from HTML language.</p>
+						</div>
+
+					</div>
+                </div>
+                
+                <div class="space-y-12 my-16">
+					<div class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
+						
+						<!-- Client logo -->
+						<div class="mb-6 lg:mb-0">
+							<img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="css">
+						</div>
+
+						<!-- Client info -->
+						<div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
+							<h3 class="text-white text-3xl font-semibold">CSS</h3>
+
+							<div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
+								<div class="badge">UI Design</div>
+								<div class="badge">Frontend development</div>
+							</div>
+
+							<p class="text-secondary">I’ve use css for few month and im still learning for css.</p>
+						</div>
+
+					</div>
+                </div>
+
+                <div class="space-y-12 my-16">
+					<div class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
+						
+						<!-- Client logo -->
+						<div class="mb-6 lg:mb-0">
+							<img src="https://cdn-icons-png.flaticon.com/512/919/919830.png" alt="">
+						</div>
+
+						<!-- Client info -->
+						<div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
+							<h3 class="text-white text-3xl font-semibold">PHP</h3>
+
+							<div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
+								<div class="badge">Server Side Web</div>
+								<div class="badge">Backend development</div>
+							</div>
+
+							<p class="text-secondary">Laravel is my need, but PHP is my need.</p>
+						</div>
+
+					</div>
+                </div>
+
+                <div class="space-y-12 my-16">
+					<div class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
+						
+						<!-- Client logo -->
+						<div class="mb-6 lg:mb-0">
+							<img src="https://cdn.worldvectorlogo.com/logos/laravel-2.svg" alt="" width="400">
+						</div>
+
+						<!-- Client info -->
+						<div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
+							<h3 class="text-white text-3xl font-semibold">Laravel</h3>
+
+							<div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
+								<div class="badge">Framework</div>
+								<div class="badge">Backend development</div>
+							</div>
+
+							<p class="text-secondary">Laravel has become my daily need.</p>
+						</div>
+
+					</div>
+                </div>
+
+                <div class="space-y-12 my-16">
+					<div class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
+						
+						<!-- Client logo -->
+						<div class="mb-6 lg:mb-0">
+							<img src="https://cdn.worldvectorlogo.com/logos/tailwind-css-2.svg" alt="tailwind" width="400">
+						</div>
+
+						<!-- Client info -->
+						<div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
+							<h3 class="text-white text-3xl font-semibold">Tailwind</h3>
+
+							<div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
+								<div class="badge">Framework</div>
+								<div class="badge">Frontend development</div>
+							</div>
+
+							<p class="text-secondary">I use the tailwind framework to help with my design.</p>
+						</div>
+
+					</div>
+                </div>
+
+                <div class="space-y-12 my-16">
+					<div class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
+						
+						<!-- Client logo -->
+						<div class="mb-6 lg:mb-0">
+							<img src="https://cdn.worldvectorlogo.com/logos/logo-javascript.svg" alt="" width="400">
+						</div>
+
+						<!-- Client info -->
+						<div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
+							<h3 class="text-white text-3xl font-semibold">Javascript</h3>
+
+							<div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
+								<div class="badge">Web Server Side</div>
+								<div class="badge">Frontend development</div>
+							</div>
+
+							<p class="text-secondary">I use javascript for 2 months of learning and still in the understanding stage.</p>
+						</div>
+
+					</div>
+                </div>
+
+                
+
+                <div class="space-y-12 my-16">
+					<div class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
+						
+						<!-- Client logo -->
+						<div class="mb-6 lg:mb-0">
+							<img src="https://cdn.worldvectorlogo.com/logos/c.svg" alt="c++_image" width="400">
+						</div>
+
+						<!-- Client info -->
+						<div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
+							<h3 class="text-white text-3xl font-semibold">HTML</h3>
+
+							<div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
+								<div class="badge">UI/UX</div>
+								<div class="badge">Frontend development</div>
+							</div>
+
+							<p class="text-secondary">I have been using this programming language for several months and am not yet a professional.</p>
+						</div>
+
+					</div>
+                </div>
+        </section>
+    </div>
+
+    <div class="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+        <section class="w-full">
+            <h2 id="contact" class="secondary-title">Contact Me</h2>
+            <p class="section-paragraph">Feel free to to contact me any time, through any method below.</p>
+
+            <div class="w-full grid lg:grid-cols-2 gap-8 lg:gap-32 mt-24">
+                <form method="POST" class="contact-form" id="contact-form">
+                    <div class="space-y-12">
+                            <div>
+                                <label class="text-white block mb-6 text-xl font-bold">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Name..." class="w-full border border-input-border bg-input px-4 py-4">
+                            </div>
+                            <div>
+                                <label class="text-white block mb-6 text-xl font-bold mt-7">Email</label>
+                                <input type="email" id="email" name="email" placeholder="gmail@gmail.com " class="w-full border border-input-border bg-input px-4 py-4">
+                            </div>
+                            <div>
+                                <label class="text-white block mb-6 text-xl font-bold">Message</label>
+                                <textarea type="text" id="message" name="message" placeholder="Message..." class="w-full border border-input-border bg-input px-4 py-4 h-56 resize-none"></textarea>
+                            </div>
+                            <button type="submit" class="px-6 py-2 bg-theme text-white font-bold">Send it!</button>
+                        </div>
+                </form>
+
+                <div class="mt-12">
+                    <!-- Contact info -->
+                    <p class="text-secondary">Created By 🎇 Rayhan</p>
+                    <a href="mailto:rayhancoding1603@gmail.com" class="text-secondary underline mt-3 block">rayhancoding1603@gmail.com</a>
+
+                    <!-- Socials -->
+                    <div class="flex mt-20 space-x-6">
+
+                        <!-- Github -->
+                        <a href="https://github.com/Ryhann">
+                            <img src="https://www.sferalabs.cc/wp-content/uploads/github-logo-white-300x199.png" width="70" alt="">
+                         </a>
+
+                        <!-- Twitter -->
+                        <a href="https://twitter.com/Rayhan26901596">
+                            <svg class="w-8 h-8 lg:w-12 lg:h-12" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 0C9.40313 0 0 9.40313 0 21C0 32.5969 9.40313 42 21 42C32.5969 42 42 32.5969 42 21C42 9.40313 32.5969 0 21 0ZM31.0922 15.8297C31.1062 16.05 31.1062 16.2797 31.1062 16.5047C31.1062 23.3859 25.8656 31.3125 16.2891 31.3125C13.3359 31.3125 10.5984 30.4547 8.29219 28.9781C8.71406 29.025 9.11719 29.0437 9.54844 29.0437C11.9859 29.0437 14.2266 28.2188 16.0125 26.8219C13.725 26.775 11.8031 25.275 11.1469 23.2125C11.9484 23.3297 12.6703 23.3297 13.4953 23.1188C12.3175 22.8795 11.2588 22.2398 10.4991 21.3084C9.73949 20.377 9.32572 19.2113 9.32812 18.0094V17.9437C10.0172 18.3328 10.8281 18.5719 11.6766 18.6047C10.9633 18.1293 10.3784 17.4854 9.97365 16.7298C9.5689 15.9743 9.35683 15.1306 9.35625 14.2734C9.35625 13.3031 9.60938 12.4172 10.0641 11.6484C11.3714 13.2578 13.0028 14.5741 14.8522 15.5117C16.7016 16.4493 18.7275 16.9873 20.7984 17.0906C20.0625 13.5516 22.7063 10.6875 25.8844 10.6875C27.3844 10.6875 28.7344 11.3156 29.6859 12.3281C30.8625 12.1078 31.9875 11.6672 32.9906 11.0766C32.6016 12.2812 31.7859 13.2984 30.7031 13.9406C31.7531 13.8281 32.7656 13.5375 33.7031 13.1297C32.9953 14.1703 32.1094 15.0938 31.0922 15.8297Z" fill="white"/></svg>								
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+
+        </section>
+    </div>
+
+    <!-- Script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+    crossorigin="anonymous"></script>
+    <script src="../src/script.js"></script>
+    
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Scroll Smooth */
+html, body {
+    scroll-behavior: smooth;
+}
+
+/* Nav Side */
+.selected-circle {
+    @apply border-theme bg-theme;
+}
+
+.nav-dot {
+    transition: background 200ms, border-color 200ms;
+}
+
+.nav-dot:hover span {
+    opacity: 1;
+    width: 200px;
+}
+
+/* For Top Secondary Title */
+.secondary-title {
+    @apply text-3xl font-bold;
+}
+
+.secondary-title::before {
+    content: "";
+    @apply block w-12 h-2 bg-theme rounded-full mb-1;
+}
+
