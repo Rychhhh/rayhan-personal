@@ -4,7 +4,7 @@
   "description": "",
   "main": "tailwind.config.js",
   "scripts": {
-    "dev": "npx tailwindcss -i ./src/tailwind.css -o ./dist/output.css --watch",
+    "dev": "npx tailwindcss -i ./dist/tailwind.css -o ./dist/output.css --watch",
     "build": "cross-env NODE_ENV=production tailwindcss ./src/tailwind.css -o ./dist/output.css"
   },
   "author": "",
