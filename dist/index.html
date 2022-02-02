@@ -18,17 +18,44 @@
     <!-- Email js -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
 
+    <!-- Aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Sweet Alert -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+
+    <style>
+        
+        .greeting {
+            width: 100%;
+            animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+            overflow: hidden;
+            border-right: 3px solid;
+        
+        }
+
+            @keyframes typing {
+            from {
+            width: 0
+            }
+        }
+            
+        @keyframes blink {
+            50% {
+            border-color: transparent
+            }
+        }
+
+    </style>
 
 </head>
 <body class="bg-body text-white font-poppins pb-12" style="height: 2000;">
    
     <header class="py-8">
         <div class="container flex justify-between items-center  mx-auto px-8 md:px-14 lg:px-24 w-full">
-            <div class="text-xl">Union Dev</div>
-            <div class="hidden md:flex space-x-10 items-center">
+            <div class="text-xl" data-aos="fade-right" data-aos-duration="2000">Union Dev</div>
+            <div class="hidden md:flex space-x-10 items-center" data-aos="fade-left" data-aos-duration="2000">
                 <a href="#">Home</a>
                 <a href="#work">My Work</a>
                 <a href="#language">Programming Language</a>
@@ -68,7 +95,7 @@
             <div class="flex flex-wrap lg:ml-20 justify-center md:justify-start max-w-xl mt-0 md:my-36">
 
                 <!-- Title -->
-                <h1 class="font-bold text-5xl text-center md:text-6xl md:text-left lg:text-7xl lg:pl-8 ">Welcome <br>  To My Website Portfolio.</h1>
+                <h1 class="greeting font-bold text-5xl text-center md:text-5xl md:text-left lg:text-7xl lg:pl-8">Welcome To My Website Portfolio.</h1>
 
                 <!-- Button -->
                 <div class="w-full mt-6 flex justify-center md:justify-start md:ml-16 md:mt-7">
@@ -93,56 +120,66 @@
             <p class="section-paragraph">I’ve had the pleasure of working with multiple Fortune 500 companies, designing and implementing both frontend and backend.</p>
 
             <div class="grid grid-cols-2 gap-6 mt-6">
-                <div class="max-w-full rounded-xl shadow-xl overflow-hidden text-center bg-white">
-                    <img class="w-full rounded hidden md:block bg-nav h-36 lg:h-80 object-cover" src="https://images.unsplash.com/photo-1576153192396-180ecef2a715?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80" alt="imgAlt">
+
+                <!-- Card 1 -->
+                <div class="max-w-full rounded-xl shadow-xl overflow-hidden text-center bg-white" data-aos="flip-right" data-aos-duration="2500">
+                    <img class="w-full rounded hidden md:block bg-nav h-36 lg:h-80 object-cover" src="https://porthan-react.vercel.app/static/b795a190ad18c9e07e98dd4aa0ad14f7/9a3da/project1.png" alt="portfolio_bs">
                     <div class="px-6 py-6  text-black">
-                        <div class="font-bold text-center text-5xl">Name Title</div>
-                        <p class="text-gray-500 text-base py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dignissimos est repellat nam sed doloremque architecto quisquam, dolor iusto asperiores eaque quidem rem pariatur, aspernatur ullam eveniet illo accusamus odit!</p>
+                        <div class="font-bold text-center text-5xl">My Portfolio Bootstrap</div>
+                        <p class="text-gray-500 text-base py-4">Website ini dibuat dengan CSS Framework yaitu Bootstrap Kasih star nya ya :)</p>
                       </div>
                       <div class="px-6 pb-4 grid grid-cols-2 gap-1">
-                          <button class="px-2 py-2 bg-sky-500 font-mono text-xl rounded-xl">Demo</button>
-                          <button class="px-2 py-2 bg-gray-700 font-mono text-xl rounded-xl">Github</button>
+                          <a href="https://rayhan-portfolio.netlify.app/" class="px-2 py-2 bg-sky-500 font-mono text-xl rounded-xl">Demo</a>
+                          <a href="https://github.com/Ryhann/Portfolio-new" class="px-2 py-2 bg-gray-700 font-mono text-xl rounded-xl">Github</a>
                       </div>
                 </div>
-                <div class="max-w-full rounded-xl shadow-xl overflow-hidden text-center bg-white">
-                    <img class="w-full hidden md:block bg-nav h-36 lg:h-80 object-cover" src="https://images.unsplash.com/photo-1545235617-7a424c1a60cc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=880&q=80" alt="imgAlt">
+
+                <div class="max-w-full rounded-xl shadow-xl overflow-hidden text-center bg-white" data-aos="flip-left" data-aos-duration="2500">
+                    <img class="w-full hidden md:block bg-nav h-36 lg:h-80 object-cover" src="https://porthan-react.vercel.app/static/b49aa83478fba8fc49391c679f0b42a3/43fa5/project2.png" alt="simple-quiz">
                     <div class="px-6 py-4  text-black">
-                        <div class="font-bold text-center text-5xl">Name Title</div>
-                        <p class="text-gray-500 text-base py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dignissimos est repellat nam sed doloremque architecto quisquam, dolor iusto asperiores eaque quidem rem pariatur, aspernatur ullam eveniet illo accusamus odit!</p>
+                        <div class="font-bold text-center text-5xl">Simple Quiz</div>
+                        <p class="text-gray-500 text-base py-4">Simpel quiz ini dibuat karena saya gabut akan tugas saya dan ingin melakukan sesuatu yang seru !</p>
                       </div>
                       <div class="px-6 py-4 grid grid-cols-2 gap-1">
-                          <button class="px-2 py-2 bg-sky-500 font-mono text-xl rounded-xl">Demo</button>
-                          <button class="px-2 py-2 bg-gray-700 font-mono text-xl rounded-xl">Github</button>
+                          <a href="https://ryhann.github.io/Quiz-app/" class="px-2 py-2 bg-sky-500 font-mono text-xl rounded-xl">Demo</a>
+                          <a href="https://github.com/Ryhann/Quiz-app" class="px-2 py-2 bg-gray-700 font-mono text-xl rounded-xl">Github</a>
                       </div>
                 </div>
-                <div class="max-w-full rounded-xl shadow-xl overflow-hidden text-center bg-white">
-                    <img class="w-full hidden md:block md:h-80" src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1336&q=80" alt="imgAlt">
+
+                <div class="max-w-full rounded-xl shadow-xl overflow-hidden text-center bg-white" data-aos="flip-right" data-aos-duration="2500">
+                    <img class="w-full h-20 md:h-80" src="./img/project_countdown.png" alt="imgAlt">
                     <div class="px-6 py-4  text-black">
-                      <div class="font-bold text-center text-5xl">Name Title</div>
-                      <p class="text-gray-500 text-base py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dignissimos est repellat nam sed doloremque architecto quisquam, dolor iusto asperiores eaque quidem rem pariatur, aspernatur ullam eveniet illo accusamus odit!</p>
+                      <div class="font-bold text-center text-5xl">Countdown New Year</div>
+                      <p class="text-gray-500 text-base py-4">Website Countdown Time ini untuk menghitung mundur tahun baru 2022!</p>
                     </div>
                     <div class="px-6 py-4 grid grid-cols-2 gap-1">
-                        <button class="px-2 py-2 bg-sky-500 font-mono text-xl rounded-xl">Demo</button>
-                        <button class="px-2 py-2 bg-gray-700 font-mono text-xl rounded-xl">Github</button>
+                        <a href="https://countdown-time-han.netlify.app/" class="px-2 py-2 bg-sky-500 font-mono text-xl rounded-xl">Demo</a>
+                        <a href="https://github.com/Ryhann/Countdown-timer" class="px-2 py-2 bg-gray-700 font-mono text-xl rounded-xl">Github</a>
                     </div>
                 </div>
 
-                <div class="max-w-full rounded-xl shadow-xl overflow-hidden text-center bg-white">
-                    <img class="w-full h-20 md:h-80" src="https://images.unsplash.com/photo-1603969072881-b0fc7f3d77d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80s" alt="imgAlt">
+                <div class="max-w-full rounded-xl shadow-xl overflow-hidden text-center bg-white" data-aos="flip-left" data-aos-duration="2500">
+                    <img class="w-full h-20 md:h-80" src="./img/project_appsensi.png" alt="project_appsensi">
                     <div class="px-6 py-4  text-black">
-                      <div class="font-bold text-center text-5xl">Name Title</div>
-                      <p class="text-gray-500 text-base py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dignissimos est repellat nam sed doloremque architecto quisquam, dolor iusto asperiores eaque quidem rem pariatur, aspernatur ullam eveniet illo accusamus odit!</p>
+                      <div class="font-bold text-center text-5xl">Appsensi</div>
+                      <p class="text-gray-500 text-base py-4">Website yang dibuat untuk keperluan absen student dan bisa dikelola oleh admin!</p>
                     </div>
                     <div class="px-6 py-4 grid grid-cols-2 gap-1">
-                        <button class="px-2 py-2 bg-sky-500 font-mono text-xl rounded-xl">Demo</button>
-                        <button class="px-2 py-2 bg-gray-700 font-mono text-xl rounded-xl">Github</button>
+                        <a href="https://appsensi.herokuapp.com/" class="px-2 py-2 bg-sky-500 font-mono text-xl rounded-xl">Demo</a>
+                        <a href="https://github.com/Ryhann/absensi-school" class="px-2 py-2 bg-gray-700 font-mono text-xl rounded-xl">Github</a>
                     </div>
                 </div>
 
             </div>
         </section>
     </div>
-
+    
+    <!-- More Project -->
+    <div class="container mt-80 mx-8 md:mx-52 items-center flex justify-between md:mt-40 px-8 md:px-18 lg:px-56 w-full">
+        <section class="w-full">
+            <button class="rounded-xl flex text-3xl text-center px-9 py-6 lg:ml-96 lg:mx-96 bg-blue-700 hover:bg-blue-900 hover:animate-pulse"><a href="https://github.com/Ryhann?tab=repository"> More Project </a></button>
+        </section>
+    </div>
 
     <!-- Programming Language -->
     <div class="container mt-96 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-56 w-full">
@@ -150,7 +187,7 @@
             <h2 id="language" class="secondary-title">Programming Language</h2>
 				<p class="section-paragraph text-gray-300">I’ve had the pleasure of working with multiple Fortune 500 companies, designing and implementing both frontend and backend.</p>
 
-                <div class="space-y-12 my-16">
+                <div class="space-y-12 my-16" data-aos="zoom-in-up">
 					<div class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
 						
 						<!-- Client logo -->
@@ -173,7 +210,7 @@
 					</div>
                 </div>
                 
-                <div class="space-y-12 my-16">
+                <div class="space-y-12 my-16" data-aos="zoom-in-up">
 					<div class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
 						
 						<!-- Client logo -->
@@ -196,7 +233,7 @@
 					</div>
                 </div>
 
-                <div class="space-y-12 my-16">
+                <div class="space-y-12 my-16" data-aos="zoom-in-up">
 					<div class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
 						
 						<!-- Client logo -->
@@ -219,7 +256,7 @@
 					</div>
                 </div>
 
-                <div class="space-y-12 my-16">
+                <div class="space-y-12 my-16" data-aos="zoom-in-up">
 					<div class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
 						
 						<!-- Client logo -->
@@ -242,7 +279,7 @@
 					</div>
                 </div>
 
-                <div class="space-y-12 my-16">
+                <div class="space-y-12 my-16" data-aos="zoom-in-up">
 					<div class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
 						
 						<!-- Client logo -->
@@ -265,7 +302,7 @@
 					</div>
                 </div>
 
-                <div class="space-y-12 my-16">
+                <div class="space-y-12 my-16" data-aos="zoom-in-up">
 					<div class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
 						
 						<!-- Client logo -->
@@ -290,7 +327,7 @@
 
                 
 
-                <div class="space-y-12 my-16">
+                <div class="space-y-12 my-16" data-aos="zoom-in-up">
 					<div class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
 						
 						<!-- Client logo -->
@@ -316,7 +353,7 @@
     </div>
 
     <div class="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
-        <section class="w-full">
+        <section class="w-full" data-aos="flip-left" data-aos-duration="1500">
             <h2 id="contact" class="secondary-title">Contact Me</h2>
             <p class="section-paragraph">Feel free to to contact me any time, through any method below.</p>
 
@@ -369,6 +406,12 @@
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
     crossorigin="anonymous"></script>
     <script src="./script.js"></script>
+
+    <!-- Aos Script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     
 
 </body>
